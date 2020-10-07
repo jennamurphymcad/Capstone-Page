@@ -24,32 +24,82 @@
 </head>
 
 <body>
-  <div id="mySidenav" class="sidenav">
-    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-    <h3>Contents</h3>
-    <a href="#">Problem Statement</a>
-    <a href="#">Inspiration</a>
-    <a href="#">Process</a>
-    <a href="#">Tools</a>
-    <a href="#">User Testing</a>
-    <a href="#">Deliverables</a>
-    <a href="#">Summary</a>
-    <a href="#">Endnotes</a>
-  </div>
+  <header>
+    <div id="mySidenav" class="sidenav">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Contents</h3>
+          <a href="#problem">Problem Statement</a>
+          <a href="#inspo">Inspiration</a>
+          <a href="#process">Process</a>
+          <a href="#tool">Tools</a>
+          <a href="#test">User Testing</a>
+          <a href="#deliver">Deliverables</a>
+          <a href="#summary">Summary</a>
+          <a href="#notes">Endnotes</a>
+    </div>
 
   <!-- Use any element to open the sidenav -->
-  <img src="img/Hamburger_icon.svg" alt="menu icon" onclick="openNav()">
 
-  <!-- Add all page content inside this div if you want the side nav to push page content to the right (not used if you only want the sidenav to sit on top of the page -->
-  <div id="main">
-    ...
-  </div>
-  <!-- Add your site or application content here -->
-  <p>Hello world! This is HTML5 Boilerplate.</p>
+  <img src="img/Hamburger_icon.svg" alt="menu icon" onclick="openNav()">
+  <h1>Discover a Space Between</h1>
+  <h2>A hybrid Exhibition to highlight how digital exhibit companion pieces can increase engagement, accessibility and understanding of artists' work.</h2>
+</header>
+
+  <main id="main">
+
+    <section id="problem">
+      <h3>Problem Statement</h3>
+
+      <p>The Coronavirus has brought the physical art world to a halt.<sup>1</sup> Since the onset of COVID-19, 92% of Minnesota Art Organizations have reported canceled events, with an estimated loss of 2,351 ,612 attendees. Americans for the Arts has found that out of those Minnesota organization, 11% are not confident their organizations will survive the impact of COVID-19.<sup>2</sup></p>
+
+      <p>In response to the changing time, many organizations are quickly increasing their online presence and making artwork more accessible through digital means than ever before. The rise of online viewing rooms and virtual tours are becoming more and more common, from large and small organizations alike.<sup>3</sup></p>
+
+      <p>Despite this, there will always be a desire for collectors and art viewers to have an in-person experience and to be able to physically interact with works of art. The transition from Coronavirus to a new normal will likely reveal a new hybrid exhibition approach of physical and digital in the future.<sup>4</sup> For artists delving into New Media Art, this presents a special opportunity to expand their influence and enhance viewers understanding of their work and process.</p>
+
+      <p>The aim of my capstone project is to show how digital exhibition companion pieces can increase engagement and accessibility, specifically in regards to New Media artists' work, in times of social distancing and beyond, creating tools that can be used both online and in the exhibition space to engage the viewers and enhance the understanding of their work.</p>
+    </section>
+
+    <section id="inspo">
+      <h3>Questions and Inspirations</h3>
+    </section>
+
+    <section id="process">
+      <h3>Process</h3>
+    </section>
+
+    <section id="tool">
+      <h3>Tools</h3>
+    </section>
+
+    <section id="test">
+      <h3>User Testing and Research</h3>
+    </section>
+
+    <section id="deliver">
+      <h3>Deliverables</h3>
+    </section>
+
+    <section id="summary">
+      <h3>Summary</h3>
+    </section>
+
+    <section id="notes">
+      <h3>Endnotes</h3>
+        <ol>
+          <li>"The Economc Impact of Coronavirus on the Arts and Culture Sector," Americans for the Arts, accessed Septerrber 23, 2020,
+https://WV.Jw. americansforthearts. org/by-t opic/disaster-preparedness/the-economc-irTl)act -of -coronavirus-on-the-arts-and-culture-sector</li>
+          <li>Dotnnic-Madori Davis, "No more ritzy galas, dinner parties, or jet-set fairs: The art world is cotnng to terms with a 'shelter-in-place' market. 5 insiders reveal how the in-dustry is faring - and their hopes for what's next," Business Insider, June 13, 2020, https://WV.Jw. businessinsider. corn'how-5-key-art -industry-insiders-are-handling-coronavirus-pandetTic-2020-5</li>
+          <li>Arrericans for the Arts, "The Economc Impact of Coronavirus on the Arts and Culture Sector."</li>
+          <li>Arrericans for the Arts, "The Economc Impact of Coronavirus on the Arts and Culture Sector."</li>
+        </ol>
+    </section>
+
+  </main>
+
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
   <script src="js/main.js"></script>
-  <script>
+  <!-- <script>
   /* Set the width of the side navigation to 250px */
 function openNav() {
   document.getElementById("mySidenav").style.width = "250px";
@@ -59,7 +109,7 @@ function openNav() {
 function closeNav() {
   document.getElementById("mySidenav").style.width = "0";
 }
-  </script>
+  </script> -->
   <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
   <script>
     window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;

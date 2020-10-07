@@ -263,7 +263,7 @@ textarea {
 }
 
 /*
-Jenna Contributions
+JM Start
 */
 /* The side navigation menu */
 .sidenav {
@@ -280,11 +280,11 @@ Jenna Contributions
 }
 
 /* The navigation menu links */
-.sidenav a {
+.sidenav a, .sidenav h3 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
-  font-size: 25px;
-  color: #818181;
+  font-size: 24px;
+  color: #fef9f3;
   display: block;
   transition: 0.3s;
 }
@@ -299,7 +299,7 @@ Jenna Contributions
   position: absolute;
   top: 0;
   right: 25px;
-  font-size: 36px;
+  font-size: 24px;
   margin-left: 50px;
 }
 
@@ -313,4 +313,13 @@ Jenna Contributions
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;}
+}
+
+header img {
+  float: left;
+  margin-left: 15px;
+}
+
+header h1, header h2 {
+  text-align: center;
 }
