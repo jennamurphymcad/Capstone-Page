@@ -303,10 +303,36 @@ JM Start
   margin-left: 50px;
 }
 
+/* The hero image */
+.hero-image {
+  background-image: url("../img/placeholder.jpg");
+  /* Set a specific height */
+  height: 50%;
+  height: 500px;
+  /* Position and center the image to scale nicely on all screens */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  position: relative;
+}
+
+/* Place text in the middle of the image */
+.hero-text {
+  text-align: left;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: black;
+  font-size:24px;
+}
+
 /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
 #main {
   transition: margin-left .5s;
   padding: 20px;
+  max-width: 960px;
+  margin: 0 auto;
 }
 
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
