@@ -349,3 +349,14 @@ header img {
 header h1, header h2 {
   text-align: center;
 }
+footer {
+  clear: both;
+  left: 0;
+  width: 100%;
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding-top: 20px;
+  padding-bottom: 20px;
+  text-align: center;
+}
