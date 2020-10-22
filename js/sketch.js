@@ -26,7 +26,7 @@ function draw() {
 function variableEllipse(x, y, px, py) {
   let speed = abs(x - px) + abs(y - py);
   stroke(speed);
-  strokeWeight(.08);
+  strokeWeight(.1);
   noFill();
   ellipse(x, y, speed, speed);
 }
