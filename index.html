@@ -77,7 +77,7 @@
 
       <p>During this stay-at-home order, my mind wandered back to the show, and to the show that was supposed to follow, which, of course, I never had a chance to see. The impact on the gallery, as well as the artists, felt significant.</p>
 
-      <p>With these restrictions in place, I began to notice how unengaging a traditional exhibition website could be. They typically hold a brief overview of the work with single images and the title and prices below the piece. With the recent exhibition in mind, I wondered if you could bring in the doll houses and horses that line the floor and shelves next to the paintings through digital means. Could there be digital coloring books or animated horses galloping by as you scroll through the pages?</p>
+      <p>With these restrictions in place, I began to notice how unengaging a traditional exhibition website could be. They typically hold a brief overview of the work with single images and the title and prices below the piece. <b>With the recent exhibition in mind, I wondered if you could bring in the doll houses and horses that line the floor and shelves next to the paintings through digital means.</b> Could there be digital coloring books or animated horses galloping by as you scroll through the pages?</p>
 
       <p class="emphasis">This is where the idea for my capstone project originated - how to create an engaging experience on the website exhibition page that allows a viewer to get a glimpse of the details that make the exhibition or work special.</p>
 
@@ -85,24 +85,30 @@
 
     <section id="tools">
       <h3>Tools</h3>
-      <ul>
+      <ul style="max-width: 60%; ">
+        <div style="max-width: 50%; float: left;">
         <li>Paper, Pencil, Pens</li>
         <li>Apple iPad and Apple Pencil</li>
         <li>MacBook Pro</li>
         <li>Adobe Draw</li>
+      </div>
+      <div style="max-width: 50%; float: right;">
         <li>Photoshop</li>
         <li>Atom Text Editor</li>
         <li>HTML, CSS, javascript</li>
         <li>p5.js</li>
+      </div>
       </ul>
+      <div style="clear:both;">
+      </div>
     </section>
 
     <section id="process">
       <h3>Process</h3>
 
-      <p>I took this concept and set out to explore it with my own work. I took in the feedback from my previous exhibition, Infinite Abyss in Motion Millyard show at Stonebridge Lofts. The works featured were my Computational Drawings created with p5.js. Some of the viewers had trouble understanding how the pieces were made.  Were they drawings? Were they made by the computer? If so, how?</p>
+      <p>I took this concept and set out to explore it with my own work. I took in the feedback from my previous exhibition, Infinite Abyss in Motion Millyard show at Stonebridge Lofts. The works featured were my Computational Drawings created with p5.js. Some of the viewers had trouble understanding how the pieces were made.  <b>Were they drawings? Were they made by the computer? If so, how?</b></p>
       <img src="img/discussion.jpg" alt="Stonebridge Loft exhibition" style="max-width: 100%;">
-      <p>I felt an appropriate digital companion piece to a physical exhibition would be a drawing tool that aims to help the viewer get an inside look at how these drawings are being created. The drawing tool would also allow the viewer to interact with the work, seeing firsthand how the designs can be transformed and altered with just a few small changes, thus creating an active versus passive viewing experience.</p>
+      <p class="emphasis">I felt an appropriate digital companion piece to a physical exhibition would be a drawing tool that aims to help the viewer get an inside look at how these drawings are being created. The drawing tool would also allow the viewer to interact with the work, seeing firsthand how the designs can be transformed and altered with just a few small changes, thus creating an active versus passive viewing experience.</p>
       <p>I have been working with p5.js and exploring Computational Aesthetics since my introduction to the topic during the Experimental Interaction course taught at MCAD in 2015. Below are a few of my first computational sketches that were created during the course.</p>
       <div class="row">
         <div class="column">
@@ -117,7 +123,7 @@
       </div>
       <p>What I found so engaging was the ability the program gave me to create delicate lines, similar to a pencil drawing. I wanted to build this drawing tool with my aesthetic in mind and demonstrate why I find the world of computational drawings to be so transfixing.</p>
       <img src="img/Untitled-1.jpg" alt="Sketch" style="max-width: 100%;">
-      <p>My initial concept/thoughts for the Drawing Tool are sketched above. I envisioned the tool to be accessed in person or from home. I knew from the beginning I wanted the user to have easy control through sliders or knobs, so that no technical knowledge or background in coding was needed to manipulate the drawing tool.</p>
+      <p class="emphasis">My initial concept/thoughts for the Drawing Tool are sketched above. I envisioned the tool to be accessed in person or from home. I knew from the beginning I wanted the user to have easy control through sliders or knobs, so that no technical knowledge or background in coding was needed to manipulate the drawing tool.</p>
       <div class="row">
         <div class="column">
           <img src="img/ellipse.png" alt="Computational Drawing" style="width:100%">
@@ -130,16 +136,20 @@
         </div>
       </div>
 
+      <figure style="float:right;width:30%;height:auto;padding-top:10px;padding-left:20px;">
+      <img src="img/DrawingToolPhase1B.gif" alt="Initial Drawing Tool Prototype" style="max-width:100%;">
+      <figcaption style="text-align: center; font-size:.9em; color: #C0C0C0;"><i>Drawing Tool Phase I</i></figcaption>
+      </figure>
       <p>When thinking about the sketch the drawing tool would manipulate, I went back to some of my earlier works from 2017. I was drawn to this earlier composition because of its contained circle composition. You could get a variety of outputs by keeping the final output within the sketch boundaries.</p>
       <p>With the sketch decided on, I set out to connect it to sliders through the p5.js canvas interface.</p>
-
-      <video width="320" height="240" controls autoplay>
+<!-- style="max-width: 50%; display: block; margin-left: auto; margin-right: auto" -->
+      <!-- <video width="320" height="240" controls autoplay>
         <source src="img/DrawingToolPhase1.mp4" type="video/mp4">
         <source src="img/DrawingToolPhase1.ogg" type="video/ogg">
         Your browser does not support the video tag.
-      </video>
+      </video> -->
 
-      <img src="img/DrawingToolPhase1B.gif" alt="Initial Drawing Tool Prototype" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto">
+
       <!-- <iframe src="https://player.vimeo.com/video/470876844" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
       <p>Once the basic functionality was set, I began to increase the complexity of the tool. I was able to use input from my Expert Feedback and User Testing to enhance the continued development of the tool.</p>
       <p style="text-align:center;"><b>Weekly Process Summary can be found documented on my <a href="https://discoveraspacebetween.blogspot.com/">Progress Platform</a></b></p>
@@ -155,6 +165,7 @@
       <p>Throughout the building process, I collected Expert and User Testing. Below is a summary of the feedback received that helped create the final product.</p>
 
       <h4>Expert Feedback Implemented</h4>
+      <div style="padding-left: 100px; padding-right: 100px;">
       <p><b>Kobby Appiah</b></br>
         <i>Creative Technology Director at KNOCK, Inc.</br>
           MCAD Adjunct Faculty teaching Coding Concepts in the Web and Multimedia Environments program.</i></p>
@@ -176,9 +187,10 @@
       <ul>
         <li>Idea to incorporate Chaos</li>
       </ul>
+    </div>
 
       <h4>User Testing Feedback Implemented</h4>
-
+<div style="padding-left: 100px; padding-right: 100px;">
       <p><b>User Group</b></br>
       The users selected for testing ranged in age from 20's-60's. The selected user audience was a group who has, or would likely, attend an Exhibition of mine. User knowledge ranged from Professional Programmers to those with a more basic understanding of web technology.</p>
 
@@ -199,16 +211,24 @@
         <li>4 Users noted that there are a large variety of output options</li>
         <li>3 Users noted they would like to share and save the images created</li>
       </ul>
-
-      <p>Throughout the process, along with collecting the user feedback, I used my own traditional working methods to influence the final Drawing Tool. In the process shown below, while working towards creating one of the final printed pieces for the exhibition, I realized how important the Translate and Rotate functionality was to creating my final works. Consequently, this functionality was built into the Drawing Tool.</p>
-      <iframe src="https://player.vimeo.com/video/471207840" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+    </div>
+      <p class="emphasis">Along with collecting the user feedback, I used my own traditional working methods to influence the final Drawing Tool. In the process shown below, while working towards creating one of the final printed pieces for the exhibition, I realized how important the Translate and Rotate functionality was to creating my final works. Consequently, this functionality was built into the Drawing Tool.</p>
+      <iframe src="https://player.vimeo.com/video/471207840" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
 
     </section>
 
     <section id="deliver">
       <h3>Deliverables</h3>
-      <a href="https://jennamurphymcad.github.io/Exhibition-Page/">Drawing Tool and Exhibition Page<a>
-      <img src="img/placeholder.jpg" alt="Exhibition Images" style="max-width: 100%;">
+      <p>For this project, I created three final deliverables: The Drawing Tool, a Physical Exhibition prototype, and the Exhibition Website that houses the exhibition work summary and final Drawing Tool.</p>
+      <h4>Drawing Tool</h4>
+      <a href="https://jennamurphymcad.github.io/Exhibition-Page/drawing.html">Link to Live Drawing Tool<a>
+      <h4>Physical Exhibition</h4>
+      <p>The physical exhibition required 5 framed pieces, an iPad formatted version of the Drawing Tool, an exhibition poster, and a physical install of the works and digital companion piece.</p>
+      <iframe src="https://player.vimeo.com/video/479716686" width="960" height="540" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <p>The Physical Exhibition was installed in MCAD's Main Building in the month of November. The final Exhibition photos can be found on the Exhibition Website.</p>
+      <!-- <img src="img/placeholder.jpg" alt="Exhibition Images" style="max-width: 100%;"> -->
+      <h4>Exhibition Website</h4>
+      <a href="https://jennamurphymcad.github.io/Exhibition-Page/">Link to Exhibition Summary Page<a>
     </section>
 
     <section id="summary">
