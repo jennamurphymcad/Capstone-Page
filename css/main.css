@@ -17,7 +17,7 @@ html {
   line-height: 1.4;
   font-family: 'Lato', sans-serif;
   font-weight: 300;
-  background-color: #e6e3de;
+  /* background-color: #e6e3de; */
 }
 
 body #main {
@@ -26,7 +26,7 @@ body #main {
 
 h1, h2, h3 {
   font-family: 'Roboto', sans-serif;
-  font-weight: 700;
+  font-weight: 400;
 }
 
 h3 {
@@ -311,7 +311,7 @@ JM Start
   z-index: 1; /* Stay on top */
   top: 0; /* Stay at the top */
   left: 0;
-  background-color: #323433; /* Black*/
+  background-color: #161616; /* Black*/
   overflow-x: hidden; /* Disable horizontal scroll */
   padding-top: 60px; /* Place content 60px from the top */
   transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
@@ -395,6 +395,7 @@ box-shadow: 5px 10px 18px #888888;
   margin: 0 auto;
 }
 
+
 /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
 @media screen and (max-height: 450px) {
   .sidenav {padding-top: 15px;}
@@ -409,14 +410,19 @@ header img {
 header h1, header h2 {
   text-align: center;
 }
+
 footer {
   clear: both;
   left: 0;
   width: 100%;
-  background-color: black;
+  background-color: #161616;
   color: white;
   text-align: center;
   padding-top: 20px;
   padding-bottom: 20px;
   text-align: center;
+}
+
+div#main {
+  border: 1px solid #161616;
 }

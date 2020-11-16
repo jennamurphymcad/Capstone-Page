@@ -1,0 +1,189 @@
+<!doctype html>
+<html class="no-js" lang="">
+
+<head>
+  <meta charset="utf-8">
+  <title>Jenna Murphy Capstone Project</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <meta property="og:title" content="">
+  <meta property="og:type" content="">
+  <meta property="og:url" content="">
+  <meta property="og:image" content="">
+
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="manifest" href="site.webmanifest">
+  <link rel="apple-touch-icon" href="icon.png">
+  <!-- Place favicon.ico in the root directory -->
+  <script src="js/vendor/p5.min.js" charset="utf-8"></script>
+  <script src="js/vendor/p5.dom.js" charset="utf-8"></script>
+  <script src="js/sketch.js"charset="utf-8"></script>
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/main.css">
+
+  <meta name="theme-color" content="#fafafa">
+</head>
+
+<body>
+  <header>
+    <div id="mySidenav" class="sidenav" style="z-index:2;">
+      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
+        <h3>Contents</h3>
+          <a href="#problem">Problem Statement</a>
+          <a href="#inspo">Inspiration</a>
+          <a href="#process">Tools & Process</a>
+          <!-- <a href="#tool">Tools</a> -->
+          <a href="#test">User Testing</a>
+          <a href="#deliver">Deliverables</a>
+          <a href="#summary">Summary</a>
+          <a href="#notes">Endnotes</a>
+    </div>
+
+  <!-- Use any element to open the sidenav -->
+
+  <img style="position:absolute;top:0;top:0;z-index:1;" src="img/Hamburger_icon.svg" alt="menu icon" onclick="openNav()">
+  <!-- <h1>Discover a Space Between</h1> -->
+  <div class="hero-image">
+      <img src="img/placeholder2.jpg" alt="header">
+    </div>
+</header>
+
+  <main id="main" style="clear:both;">
+    <section>
+      <h2 style="text-align:center;">A hybrid Exhibition to highlight how digital exhibit companion pieces can increase engagement, accessibility and understanding of artists' work.</h2>
+    </section>
+    <section id="problem">
+      <h3 class="background">Problem Statement</h3>
+
+      <p>The Coronavirus has brought the physical art world to a halt.<sup>1</sup> Since the onset of COVID-19, 92% of Minnesota Art Organizations have reported canceled events, with an estimated loss of 2,351,612 attendees. Americans for the Arts has found that out of those Minnesota organizations, 11% are not confident their organizations will survive the impact of COVID-19.<sup>2</sup></p>
+
+      <!-- <img src="img/placeholder.jpg" alt="Exhibition Images" style="max-width: 100%";> -->
+
+      <p>In response to the changing time, many organizations are quickly increasing their online presence and making artwork more accessible through digital means than ever before. The rise of online viewing rooms and virtual tours are becoming more and more common, from large and small organizations alike.<sup>3</sup></p>
+
+      <p>Despite this, there will always be a desire for collectors and art viewers to have an in-person experience and to be able to physically interact with works of art. The transition from Coronavirus to a new normal will likely reveal a new hybrid exhibition approach of physical and digital in the future.<sup>4</sup> For artists delving into New Media Art, this presents a special opportunity to expand their influence and enhance viewers understanding of their work and process.</p>
+
+      <p class="emphasis">The aim of my capstone project is to show how digital exhibition companion pieces can increase engagement and accessibility, specifically in regards to New Media artists' work, in times of social distancing and beyond, creating tools that can be used both online and in the exhibition space to engage the viewers and enhance the understanding of their work.</p>
+    </section>
+
+    <section id="inspo">
+      <h3>Questions and Inspirations</h3>
+      <p>In February 2020, I attended the CoExhibition’s <i>Interior Violence</i>, the first solo exhibition of artist Meg Lionel Murphy’s work. From the pink walls to the delicate details along the floor and various points on the walls, I was transfixed by the way these details created an intimacy with the paintings and how they enhanced my overall experience of the artist’s work.</p>
+
+      <img src="img/meglionelmurphy.jpg" alt="Megan Lionel Murphy at CoExhibition" style="float:left;width:30%;height:auto;padding-right:20px;"> Fast forward a few weeks and the world found itself in a much different reality, where attending in person exhibitions was no longer possible, due to a stay-at-home order during the rise of the COVID-19 pandemic.</p>
+
+      <p>During this stay-at-home order, my mind wandered back to the show, and to the show that was supposed to follow, which, of course, I never had a chance to see. The impact on the gallery, as well as the artists, felt significant.</p>
+
+      <p>With these restrictions in place, I began to notice how unengaging a traditional exhibition website could be. They typically hold a brief overview of the work with single images and the title and prices below the piece. With the recent exhibition in mind, I wondered if you could bring in the doll houses and horses that line the floor and shelves next to the paintings through digital means. Could there be digital coloring books, animated horses galloping as you scroll through the page? </p>
+
+      <p class="emphasis">This is where the idea for my capstone project originated - how to create an engaging experience on the website exhibition page that allows a viewer to get a glimpse of the details that make the exhibition or work special.</p>
+
+    </section>
+
+
+    <section id="process">
+      <h3>Tools and Process</h3>
+
+      <p>I took this concept and set out to explore it with my own work. I took in the feedback from my previous exhibition, Infinite Abyss in Motion Millyard show at Stonebridge Lofts. The works featured were my Computational Drawings created with p5.js. Some of the viewers had trouble understanding how the pieces were made.  Were they drawings? Were they made by the computer? If so, how?</p>
+      <img src="img/tealwall.jpg" alt="Stonebridge Loft exhibition" style="max-width: 100%;">
+      <p>For my computational designs, I felt an appropriate digital companion piece to a physical exhibition would be a drawing tool that aims to help the viewer get an inside look at how these drawings are being created. The drawing tool would also allow the viewer to interact with the work, seeing firsthand how the designs can be  transformed and altered with just a few small changes, thus creating an active versus passive viewing experience.</p>
+      <p>I have been working with p5.js and exploring Computational Aesthetics since my introduction to the topic during the Experimental Interaction course taught at MCAD in 2015.</p>
+      <div class="row">
+        <div class="column">
+          <img src="img/d1.png" alt="Computational Drawing" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img/32.png" alt="Computational Drawing" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img/d3.png" alt="Computational Drawing" style="width:100%">
+        </div>
+      </div>
+      <p>What I found so engaging was the ability the program gave me to create delicate lines, similar to a pencil drawing. I wanted to build this drawing tool with my aesthetic in mind and demonstrate why I find the world of computational drawings to be so transfixing.</p>
+      <img src="img/Untitled-1.jpg" alt="Sketch" style="max-width: 100%;">
+      <p>My initial thoughts are sketched above, where the tool could be experienced in person or at home on-line. The user will interact by means of sliders or knobs to control the sketch.</p>
+      <div class="row">
+        <div class="column">
+          <img src="img/ellipse.png" alt="Computational Drawing" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img/ellipse3.png" alt="Computational Drawing" style="width:100%">
+        </div>
+        <div class="column">
+          <img src="img/ellipse1.png" alt="Computational Drawing" style="width:100%">
+        </div>
+      </div>
+      <!-- <ul>
+        <li>JavaScript</li>
+        <li>HTML/CSS</li>
+        <li>p5.js</li>
+        <! <li>Milk</li> -->
+      <!-- </ul> -->
+      <p>Drawing Tool Prototype First Phase:</p>
+      <iframe src="https://player.vimeo.com/video/470876844" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+      <p>Research to expand on complexity and create the physical pieces for the exhibition:</p>
+      <iframe src="https://player.vimeo.com/video/471207840" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+      <p>Full process can be found documented on my <a href="https://discoveraspacebetween.blogspot.com/">Progress Platform</a></p>
+
+    </section>
+
+    <!-- <section id="tool">
+      <h3>Tools</h3>
+    </section> -->
+
+    <section id="test">
+      <h3>User Testing and Research</h3>
+    </section>
+
+    <section id="deliver">
+      <h3>Deliverables</h3>
+      <a href="https://jennamurphymcad.github.io/Exhibition-Page/">Drawing Tool and Exhibition Page<a>
+      <img src="img/placeholder.jpg" alt="Exhibition Images" style="max-width: 100%;">
+    </section>
+
+    <section id="summary">
+      <h3>Summary</h3>
+    </section>
+
+    <section id="notes">
+      <h3>Endnotes</h3>
+        <ol>
+          <li>"The Economc Impact of Coronavirus on the Arts and Culture Sector," Americans for the Arts, accessed Septerrber 23, 2020,
+https://WV.Jw. americansforthearts. org/by-t opic/disaster-preparedness/the-economc-irTl)act -of -coronavirus-on-the-arts-and-culture-sector</li>
+          <li>Dotnnic-Madori Davis, "No more ritzy galas, dinner parties, or jet-set fairs: The art world is cotnng to terms with a 'shelter-in-place' market. 5 insiders reveal how the in-dustry is faring - and their hopes for what's next," Business Insider, June 13, 2020, https://WV.Jw. businessinsider. corn'how-5-key-art -industry-insiders-are-handling-coronavirus-pandetTic-2020-5</li>
+          <li>Arrericans for the Arts, "The Economc Impact of Coronavirus on the Arts and Culture Sector."</li>
+          <li>Arrericans for the Arts, "The Economc Impact of Coronavirus on the Arts and Culture Sector."</li>
+        </ol>
+    </section>
+
+  </main>
+
+  <footer>
+    <p>Jenna Murphy | Minneapolis College of Art and Design | Master of Arts in Graphic and Web Design | Capstone Fall 2020</p>
+  </footer>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
+  <!-- <script>
+  /* Set the width of the side navigation to 250px */
+function openNav() {
+  document.getElementById("mySidenav").style.width = "250px";
+}
+
+/* Set the width of the side navigation to 0 */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+}
+  </script> -->
+  <!-- Google Analytics: change UA-XXXXX-Y to be your site's ID. -->
+  <!-- <script>
+    window.ga = function () { ga.q.push(arguments) }; ga.q = []; ga.l = +new Date;
+    ga('create', 'UA-XXXXX-Y', 'auto'); ga('set', 'anonymizeIp', true); ga('set', 'transport', 'beacon'); ga('send', 'pageview')
+  </script> -->
+
+</body>
+
+</html>

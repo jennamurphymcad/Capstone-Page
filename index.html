@@ -19,7 +19,7 @@
   <!-- Place favicon.ico in the root directory -->
   <script src="js/vendor/p5.min.js" charset="utf-8"></script>
   <script src="js/vendor/p5.dom.js" charset="utf-8"></script>
-  <script src="js/sketch.js"charset="utf-8"></script>
+  <!-- <script src="js/sketch.js"charset="utf-8"></script> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
 
@@ -44,15 +44,17 @@
   <!-- Use any element to open the sidenav -->
 
   <img style="position:absolute;top:0;top:0;z-index:1;" src="img/Hamburger_icon.svg" alt="menu icon" onclick="openNav()">
-  <!-- <h1>Discover a Space Between</h1> -->
-  <div class="hero-image">
+  <h1>Discover a Space Between</h1>
+  <!-- <div class="hero-image">
       <img src="img/placeholder2.jpg" alt="header">
-    </div>
+    </div> -->
 </header>
 
   <main id="main" style="clear:both;">
     <section>
+      <img src="img/DrawingToolHero.gif" alt="Drawing Tool GIF" style="max-width:100%;">
       <h2 style="text-align:center;">A hybrid Exhibition to highlight how digital exhibit companion pieces can increase engagement, accessibility and understanding of artists' work.</h2>
+
     </section>
     <section id="problem">
       <h3 class="background">Problem Statement</h3>
@@ -82,14 +84,27 @@
 
     </section>
 
+    <section id="tools">
+      <h3>Tools</h3>
+      <ul>
+        <li>Paper, Pencil, Pens</li>
+        <li>Apple iPad and Apple Pencil</li>
+        <li>MacBook Pro</li>
+        <li>Adobe Draw</li>
+        <li>Photoshop</li>
+        <li>Atom Text Editor</li>
+        <li>HTML, CSS, javascript</li>
+        <li>p5.js</li>
+      </ul>
+    </section>
 
     <section id="process">
-      <h3>Tools and Process</h3>
+      <h3>Process</h3>
 
       <p>I took this concept and set out to explore it with my own work. I took in the feedback from my previous exhibition, Infinite Abyss in Motion Millyard show at Stonebridge Lofts. The works featured were my Computational Drawings created with p5.js. Some of the viewers had trouble understanding how the pieces were made.  Were they drawings? Were they made by the computer? If so, how?</p>
-      <img src="img/tealwall.jpg" alt="Stonebridge Loft exhibition" style="max-width: 100%;">
-      <p>For my computational designs, I felt an appropriate digital companion piece to a physical exhibition would be a drawing tool that aims to help the viewer get an inside look at how these drawings are being created. The drawing tool would also allow the viewer to interact with the work, seeing firsthand how the designs can be  transformed and altered with just a few small changes, thus creating an active versus passive viewing experience.</p>
-      <p>I have been working with p5.js and exploring Computational Aesthetics since my introduction to the topic during the Experimental Interaction course taught at MCAD in 2015.</p>
+      <img src="img/discussion.jpg" alt="Stonebridge Loft exhibition" style="max-width: 100%;">
+      <p>I felt an appropriate digital companion piece to a physical exhibition would be a drawing tool that aims to help the viewer get an inside look at how these drawings are being created. The drawing tool would also allow the viewer to interact with the work, seeing firsthand how the designs can be transformed and altered with just a few small changes, thus creating an active versus passive viewing experience.</p>
+      <p>I have been working with p5.js and exploring Computational Aesthetics since my introduction to the topic during the Experimental Interaction course taught at MCAD in 2015. Below are a few of my first computational sketches that were created during the course.</p>
       <div class="row">
         <div class="column">
           <img src="img/d1.png" alt="Computational Drawing" style="width:100%">
@@ -103,7 +118,7 @@
       </div>
       <p>What I found so engaging was the ability the program gave me to create delicate lines, similar to a pencil drawing. I wanted to build this drawing tool with my aesthetic in mind and demonstrate why I find the world of computational drawings to be so transfixing.</p>
       <img src="img/Untitled-1.jpg" alt="Sketch" style="max-width: 100%;">
-      <p>My initial thoughts are sketched above, where the tool could be experienced in person or at home on-line. The user will interact by means of sliders or knobs to control the sketch.</p>
+      <p>My initial concept thoughts for the Drawing Tool are sketched above. I envisioned the tool to be accessed in person or from home. I knew from the beginning I wanted the user to have easy control through sliders or knobs, so that no technical knowledge or background in coding was needed to manipulate the drawing tool.</p>
       <div class="row">
         <div class="column">
           <img src="img/ellipse.png" alt="Computational Drawing" style="width:100%">
@@ -115,16 +130,13 @@
           <img src="img/ellipse1.png" alt="Computational Drawing" style="width:100%">
         </div>
       </div>
-      <!-- <ul>
-        <li>JavaScript</li>
-        <li>HTML/CSS</li>
-        <li>p5.js</li>
-        <! <li>Milk</li> -->
-      <!-- </ul> -->
-      <p>Drawing Tool Prototype First Phase:</p>
-      <iframe src="https://player.vimeo.com/video/470876844" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
-      <p>Research to expand on complexity and create the physical pieces for the exhibition:</p>
-      <iframe src="https://player.vimeo.com/video/471207840" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
+      <p>When thinking about the sketch the drawing tool would manipulate, I went back to some of my earlier works from 2017. I was drawn to this earlier composition due to its contained circle composition. You could get a variety of outputs, by keeping the final output within the sketch boundaries.</p>
+      <p>With the sketch decided on, I set out to connect it to sliders through the p5.js canvas Interface.</p>
+
+      <img src="img/DrawingToolPhase1.gif" alt="Initial Drawing Tool Prototype" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto">
+      <!-- <iframe src="https://player.vimeo.com/video/470876844" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
+      <p>Once the basic functionality was set, I set out to increase the complexity of the tool. I was influenced by my Expert Feedback and User Testing to influence the continued development of the tool.</p>
 
       <p>Full process can be found documented on my <a href="https://discoveraspacebetween.blogspot.com/">Progress Platform</a></p>
 
@@ -133,9 +145,13 @@
     <!-- <section id="tool">
       <h3>Tools</h3>
     </section> -->
-
     <section id="test">
+
       <h3>User Testing and Research</h3>
+
+
+      <p>Along with collecting the user feedback, throughout the process I used my own traditional working methods to influence the final drawing tool In the process below, while working towards creating one of the final printed pieces for the exhibition, I realized how important Translate and Rotate functionality is to creating my final works. This functionality was then built into the Drawing Tool.</p>
+      <iframe src="https://player.vimeo.com/video/471207840" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
     </section>
 
     <section id="deliver">
@@ -151,18 +167,18 @@
     <section id="notes">
       <h3>Endnotes</h3>
         <ol>
-          <li>"The Economc Impact of Coronavirus on the Arts and Culture Sector," Americans for the Arts, accessed Septerrber 23, 2020,
-https://WV.Jw. americansforthearts. org/by-t opic/disaster-preparedness/the-economc-irTl)act -of -coronavirus-on-the-arts-and-culture-sector</li>
-          <li>Dotnnic-Madori Davis, "No more ritzy galas, dinner parties, or jet-set fairs: The art world is cotnng to terms with a 'shelter-in-place' market. 5 insiders reveal how the in-dustry is faring - and their hopes for what's next," Business Insider, June 13, 2020, https://WV.Jw. businessinsider. corn'how-5-key-art -industry-insiders-are-handling-coronavirus-pandetTic-2020-5</li>
-          <li>Arrericans for the Arts, "The Economc Impact of Coronavirus on the Arts and Culture Sector."</li>
-          <li>Arrericans for the Arts, "The Economc Impact of Coronavirus on the Arts and Culture Sector."</li>
+          <li>"The Economic Impact of Coronavirus on the Arts and Culture Sector," Americans for the Arts, accessed September 23, 2020, <a href="https://www.americansforthearts.org/by-topic/disaster-preparedness/the-economic-impact-of-coronavirus-on-the-arts-and-culture-sector">https://www.americansforthearts.org/by-topic/disaster-preparedness/the-economic-impact-of-coronavirus-on-the-arts-and-culture-sector</a></li>
+          <li>Dominic-Madori Davis, "No more ritzy galas, dinner parties, or jet-set fairs: The art world is coming to terms with a 'shelter-in-place' market. 5 insiders reveal how the industry is faring — and their hopes for what's next," Business Insider, June 13, 2020, <a href="https://www.businessinsider.com/how-5-key-art-industry-insiders-are-handling-coronavirus-pandemic-2020-5">https://www.businessinsider.com/how-5-key-art-industry-insiders-are-handling-coronavirus-pandemic-2020-5</a></li>
+          <li>Americans for the Arts, "The Economic Impact of Coronavirus on the Arts and Culture Sector."</li>
+          <li>Americans for the Arts, "The Economic Impact of Coronavirus on the Arts and Culture Sector."</li>
         </ol>
+        <p style="text-align: center;"><b>Please find my full Bibliography <a href="https://docs.google.com/document/d/1HvIq9fYi5M22qFCAEgcMivicMCrOdXG2-WbFE5c4gzo/edit">here</a>.</b></p>
     </section>
 
   </main>
 
   <footer>
-    <p>Jenna Murphy | MCAD MAGWD | Fall 2020</p>
+    <p>Jenna Murphy |  Minneapolis College of Art and Design | Master of Arts in Graphic and Web Design  |  Capstone Fall 2020</p>
   </footer>
   <script src="js/vendor/modernizr-3.11.2.min.js"></script>
   <script src="js/plugins.js"></script>
