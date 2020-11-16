@@ -51,10 +51,9 @@
 </header>
 
   <main id="main" style="clear:both;">
-    <section>
+    <section id="head">
       <img src="img/DrawingToolHero.gif" alt="Drawing Tool GIF" style="max-width:100%;">
       <h2 style="text-align:center;">A hybrid Exhibition to highlight how digital exhibit companion pieces can increase engagement, accessibility and understanding of artists' work.</h2>
-
     </section>
     <section id="problem">
       <h3 class="background">Problem Statement</h3>
@@ -78,7 +77,7 @@
 
       <p>During this stay-at-home order, my mind wandered back to the show, and to the show that was supposed to follow, which, of course, I never had a chance to see. The impact on the gallery, as well as the artists, felt significant.</p>
 
-      <p>With these restrictions in place, I began to notice how unengaging a traditional exhibition website could be. They typically hold a brief overview of the work with single images and the title and prices below the piece. With the recent exhibition in mind, I wondered if you could bring in the doll houses and horses that line the floor and shelves next to the paintings through digital means. Could there be digital coloring books, animated horses galloping as you scroll through the page? </p>
+      <p>With these restrictions in place, I began to notice how unengaging a traditional exhibition website could be. They typically hold a brief overview of the work with single images and the title and prices below the piece. With the recent exhibition in mind, I wondered if you could bring in the doll houses and horses that line the floor and shelves next to the paintings through digital means. Could there be digital coloring books or animated horses galloping by as you scroll through the pages?</p>
 
       <p class="emphasis">This is where the idea for my capstone project originated - how to create an engaging experience on the website exhibition page that allows a viewer to get a glimpse of the details that make the exhibition or work special.</p>
 
@@ -118,7 +117,7 @@
       </div>
       <p>What I found so engaging was the ability the program gave me to create delicate lines, similar to a pencil drawing. I wanted to build this drawing tool with my aesthetic in mind and demonstrate why I find the world of computational drawings to be so transfixing.</p>
       <img src="img/Untitled-1.jpg" alt="Sketch" style="max-width: 100%;">
-      <p>My initial concept thoughts for the Drawing Tool are sketched above. I envisioned the tool to be accessed in person or from home. I knew from the beginning I wanted the user to have easy control through sliders or knobs, so that no technical knowledge or background in coding was needed to manipulate the drawing tool.</p>
+      <p>My initial concept/thoughts for the Drawing Tool are sketched above. I envisioned the tool to be accessed in person or from home. I knew from the beginning I wanted the user to have easy control through sliders or knobs, so that no technical knowledge or background in coding was needed to manipulate the drawing tool.</p>
       <div class="row">
         <div class="column">
           <img src="img/ellipse.png" alt="Computational Drawing" style="width:100%">
@@ -131,14 +130,19 @@
         </div>
       </div>
 
-      <p>When thinking about the sketch the drawing tool would manipulate, I went back to some of my earlier works from 2017. I was drawn to this earlier composition due to its contained circle composition. You could get a variety of outputs, by keeping the final output within the sketch boundaries.</p>
-      <p>With the sketch decided on, I set out to connect it to sliders through the p5.js canvas Interface.</p>
+      <p>When thinking about the sketch the drawing tool would manipulate, I went back to some of my earlier works from 2017. I was drawn to this earlier composition because of its contained circle composition. You could get a variety of outputs by keeping the final output within the sketch boundaries.</p>
+      <p>With the sketch decided on, I set out to connect it to sliders through the p5.js canvas interface.</p>
 
-      <img src="img/DrawingToolPhase1.gif" alt="Initial Drawing Tool Prototype" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto">
+      <video width="320" height="240" controls autoplay>
+        <source src="img/DrawingToolPhase1.mp4" type="video/mp4">
+        <source src="img/DrawingToolPhase1.ogg" type="video/ogg">
+        Your browser does not support the video tag.
+      </video>
+
+      <img src="img/DrawingToolPhase1B.gif" alt="Initial Drawing Tool Prototype" style="max-width: 100%; display: block; margin-left: auto; margin-right: auto">
       <!-- <iframe src="https://player.vimeo.com/video/470876844" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe> -->
-      <p>Once the basic functionality was set, I set out to increase the complexity of the tool. I was influenced by my Expert Feedback and User Testing to influence the continued development of the tool.</p>
-
-      <p>Full process can be found documented on my <a href="https://discoveraspacebetween.blogspot.com/">Progress Platform</a></p>
+      <p>Once the basic functionality was set, I began to increase the complexity of the tool. I was able to use input from my Expert Feedback and User Testing to enhance the continued development of the tool.</p>
+      <p style="text-align:center;"><b>Weekly Process Summary can be found documented on my <a href="https://discoveraspacebetween.blogspot.com/">Progress Platform</a></b></p>
 
     </section>
 
@@ -148,10 +152,57 @@
     <section id="test">
 
       <h3>User Testing and Research</h3>
+      <p>Throughout the building process, I collected Expert and User Testing. Below is a summary of the feedback received that helped create the final product.</p>
+
+      <h4>Expert Feedback Implemented</h4>
+      <p><b>Kobby Appiah</b></br>
+        <i>Creative Technology Director at KNOCK, Inc.</br>
+          MCAD Adjunct Faculty teaching Coding Concepts in the Web and Multimedia Environments program.</i></p>
+
+      <ul>
+        <li>p5.js over Processing</li>
+        <li>Restructure so that Sliders and Drawing are in separate containers. Allows for the sketch to be downloaded as an image without the sliders.</li>
+        <li>Invert option</li>
+        <li>Changing colors on the objects so users can quickly identify which shape is being manipulated</li>
+        <li>Reduce framerate</li>
+        <li>Goal should be to get the drawing to the point where it doesn't bog down the sliders</li>
+        <li>Changelog</li>
+      </ul>
 
 
-      <p>Along with collecting the user feedback, throughout the process I used my own traditional working methods to influence the final drawing tool In the process below, while working towards creating one of the final printed pieces for the exhibition, I realized how important Translate and Rotate functionality is to creating my final works. This functionality was then built into the Drawing Tool.</p>
+      <p><b>Ken Korth</b></br>
+        <i>Senior Software Engineer at SPS Commerce</i></br></p>
+
+      <ul>
+        <li>Idea to incorporate Chaos</li>
+      </ul>
+
+      <h4>User Testing Feedback Implemented</h4>
+
+      <p><b>User Group</b></br>
+      The users selected for testing ranged in age from 20's-60's. The selected user audience was a group who has, or would likely, attend an Exhibition of mine. User knowledge ranged from Professional Programmers to those with a more basic understanding of web technology.</p>
+
+      <b>Issues/Suggestions Implemented</b>
+      <ul>
+        <li>4 noted the Translate and Invert buttons are sticking</li>
+        <li>4 mentioned Lack of Slider names</li>
+        <li>Slider Values (1 User did not find them necessary, 1 User noted liking them)</li>
+        <li>1 user noted that they did not know what "invert" meant in this context at first</li>
+        <li>1 user noted not being sure what Translate meant and how to use that slider</li>
+        <li>Slider for color integration</li>
+      </ul>
+
+      <b>Positives</b>
+      <ul>
+        <li>4 users spent an average of 5-15 minutes playing with the tool</li>
+        <li>3 users noted they liked the Rotate, Translate, and Invert options</li>
+        <li>4 Users noted that there are a large variety of output options</li>
+        <li>3 Users noted they would like to share and save the images created</li>
+      </ul>
+
+      <p>Throughout the process, along with collecting the user feedback, I used my own traditional working methods to influence the final Drawing Tool. In the process shown below, while working towards creating one of the final printed pieces for the exhibition, I realized how important the Translate and Rotate functionality was to creating my final works. Consequently, this functionality was built into the Drawing Tool.</p>
       <iframe src="https://player.vimeo.com/video/471207840" width="640" height="360" frameborder="0" allow="autoplay; fullscreen" allowfullscreen></iframe>
+
     </section>
 
     <section id="deliver">
@@ -162,6 +213,10 @@
 
     <section id="summary">
       <h3>Summary</h3>
+      <p>During the first half of 2020, online sales made up 37% of total sales for the gallery sector, compared with only 10% of total online sales in 2019. The gallery sector has long lagged behind in converting sales to the online marketplace. But with the restrictions set out by the COVID-19 pandemic, many have been forced to rethink their online strategies. In the market research report published by Art Basel and USB, it found that online sales from a new audience (one who did not previously interact with the gallery) was largest for smaller galleries. This means there is room for smaller, local galleries, to utilize digital methods to capture the interest of new and existing audiences. This will widen the reach for the artists and galleries alike.</p>
+
+      <p>The exploration of Discover a Space Between serves as a prototype example of how a gallery could conceptualize and integrate digital companion pieces into a physical exhibition.  As noted in form + code, “Games can be physically engrossing and socially engaging, and they can sustain intense fascination of a period of months”. By creating a digital companion piece with which users can engage, a gallery can not only enhance the users’ understanding of the work, but also draw their interest, increasing the chances of their sharing the work, thus allowing the work to be seen by a wider audience than it otherwise would. This is one solution, of many that can be created, for discovering a space that exists between the physical and the digital gallery experience.</p>
+
     </section>
 
     <section id="notes">

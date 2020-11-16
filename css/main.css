@@ -31,9 +31,9 @@ h1, h2, h3 {
 
 h3 {
   /* color: #b0b0b0; */
-  font-size: 2em;
+  /* font-size: 2em; */
   /* text-transform: uppercase; */
-  text-align: center;
+  /* text-align: center; */
 }
 
 
@@ -411,6 +411,15 @@ header h1, header h2 {
   text-align: center;
 }
 
+section {
+  margin-top: 100px;
+  border-top: 1px #e0e0e0 solid;
+}
+
+section#head{
+  margin-top: 0px;
+  border-top: none;
+}
 footer {
   clear: both;
   left: 0;
