@@ -25,7 +25,9 @@ body #main {
 }
 
 h1, h2, h3 {
-  font-family: 'Roboto', sans-serif;
+  font-family: 'Bebas Neue', cursive;
+
+  /* font-family: 'Roboto', sans-serif; */
   font-weight: 400;
 }
 
@@ -333,13 +335,13 @@ JM Start
 }
 
 /* Position and style the close button (top right corner) */
-.sidenav .closebtn {
+/* .sidenav .closebtn {
   position: absolute;
   top: 0;
   right: 25px;
   font-size: 24px;
   margin-left: 50px;
-}
+} */
 
 /* The hero image */
 div.hero-image {
@@ -434,4 +436,42 @@ footer {
 
 div#main {
   border: 1px solid #161616;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: space-between;
+}
+
+div.mainCopy {
+  float: right;
+  margin-left:250px;
+
+ /* font-size: 28px; /* Increased text to enable scrolling */ */
+ padding: 0px 10px;
+ /* max-width:100%; */
+}
+
+div.sidenav {
+  height: 100%;
+  width: 225px;
+  /* max-width:30%; */
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
+
+}
+
+.active {
+  color: yellow;
+  font-style: bold;
+}
+
+@media screen and (max-height: 450px) {
+  /* .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;} */
 }

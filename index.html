@@ -14,11 +14,16 @@
 
   <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
   <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,300;0,400;1,300&display=swap" rel="stylesheet">
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
   <link rel="manifest" href="site.webmanifest">
   <link rel="apple-touch-icon" href="icon.png">
   <!-- Place favicon.ico in the root directory -->
   <script src="js/vendor/p5.min.js" charset="utf-8"></script>
   <script src="js/vendor/p5.dom.js" charset="utf-8"></script>
+  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/main.js"></script>
   <!-- <script src="js/sketch.js"charset="utf-8"></script> -->
   <link rel="stylesheet" href="css/normalize.css">
   <link rel="stylesheet" href="css/main.css">
@@ -27,10 +32,13 @@
 </head>
 
 <body>
-  <header>
-    <div id="mySidenav" class="sidenav" style="z-index:2;">
-      <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a>
-        <h3>Contents</h3>
+  <div class="wrapper">
+
+    <div id="mySidenav" class="sidenav">
+          <!-- <div id="mySidenav" class="sidenav" style="z-index:2;"> -->
+      <!-- <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">&times;</a> -->
+<h3>Contents</h3>
+
           <a href="#problem">Problem Statement</a>
           <a href="#inspo">Inspiration</a>
           <a href="#tools">Tools & Process</a>
@@ -39,23 +47,25 @@
           <a href="#deliver">Deliverables</a>
           <a href="#summary">Summary</a>
           <a href="#notes">Endnotes</a>
+
     </div>
 
   <!-- Use any element to open the sidenav -->
-
-  <img style="position:absolute;top:0;top:0;z-index:1;" src="img/Hamburger_icon.svg" alt="menu icon" onclick="openNav()">
-  <h1>Discover a Space Between</h1>
+<div class="mainCopy">
+  <header>
+    <!-- <img style="position:absolute;top:0;top:0;z-index:1;" src="img/Hamburger_icon.svg" alt="menu icon" onclick="openNav()"> -->
+    <h1>Discover a Space Between</h1>
   <!-- <div class="hero-image">
       <img src="img/placeholder2.jpg" alt="header">
     </div> -->
-</header>
+  </header>
 
   <main id="main" style="clear:both;">
     <section id="head">
       <img src="img/DrawingToolHero.gif" alt="Drawing Tool GIF" style="max-width:100%;">
       <h2 style="text-align:center;">A hybrid Exhibition to highlight how digital exhibit companion pieces can increase engagement, accessibility and understanding of artists' work.</h2>
     </section>
-    <section id="problem">
+    <section id="problem" class="section">
       <h3 class="background">Problem Statement</h3>
 
       <p>The Coronavirus has brought the physical art world to a halt.<sup>1</sup> Since the onset of COVID-19, 92% of Minnesota Art Organizations have reported canceled events, with an estimated loss of 2,351,612 attendees. Americans for the Arts has found that out of those Minnesota organizations, 11% are not confident their organizations will survive the impact of COVID-19.<sup>2</sup></p>
@@ -69,7 +79,7 @@
       <p class="emphasis">The aim of my capstone project is to show how digital exhibition companion pieces can increase engagement and accessibility, specifically in regards to New Media artists' work, in times of social distancing and beyond, creating tools that can be used both online and in the exhibition space to engage the viewers and enhance the understanding of their work.</p>
     </section>
 
-    <section id="inspo">
+    <section id="inspo" class="section">
       <h3>Questions and Inspirations</h3>
       <p>In February 2020, I attended the CoExhibition’s <i>Interior Violence</i>, the first solo exhibition of artist Meg Lionel Murphy’s work. From the pink walls to the delicate details along the floor and various points on the walls, I was transfixed by the way these details created an intimacy with the paintings and how they enhanced my overall experience of the artist’s work.</p>
 
@@ -83,7 +93,7 @@
 
     </section>
 
-    <section id="tools">
+    <section id="tools" class="section">
       <h3>Tools</h3>
       <ul style="max-width: 60%; ">
         <div style="max-width: 50%; float: left;">
@@ -104,7 +114,7 @@
       </div>
     </section>
 
-    <section id="process">
+    <section id="process" class="section">
       <h3>Process</h3>
 
       <p>I took this concept and set out to explore it with my own work. I took in the feedback from my previous exhibition, Infinite Abyss in Motion Millyard show at Stonebridge Lofts. The works featured were my Computational Drawings created with p5.js. Some of the viewers had trouble understanding how the pieces were made.  <b>Were they drawings? Were they made by the computer? If so, how?</b></p>
@@ -160,7 +170,7 @@
     <!-- <section id="tool">
       <h3>Tools</h3>
     </section> -->
-    <section id="test">
+    <section id="test" class="section">
 
       <h3>User Testing and Research</h3>
       <p>Throughout the building process, I collected Expert and User Testing. Below is a summary of the feedback received that helped create the final product.</p>
@@ -191,7 +201,7 @@
     </div>
 
       <h4>User Testing Feedback Implemented</h4>
-<div style="padding-left: 100px; padding-right: 100px;">
+      <div style="padding-left: 100px; padding-right: 100px;">
       <p><b>User Group</b></br>
       The users selected for testing ranged in age from 20's-60's. The selected user audience was a group who has, or would likely, attend an Exhibition of mine. User knowledge ranged from Professional Programmers to those with a more basic understanding of web technology.</p>
 
@@ -219,7 +229,7 @@
 
     </section>
 
-    <section id="deliver">
+    <section id="deliver" class="section">
       <h3>Deliverables</h3>
       <p>For this project, I created three final deliverables: The Drawing Tool, a Physical Exhibition prototype, and the Exhibition Website that houses the exhibition work summary and final Drawing Tool.</p>
       <h4>Drawing Tool</h4>
@@ -234,7 +244,7 @@
       <a href="https://jennamurphymcad.github.io/Exhibition-Page/">Link to Exhibition Summary Page<a>
     </section>
 
-    <section id="summary">
+    <section id="summary" class="section">
       <h3>Summary</h3>
       <p>During the first half of 2020, online sales made up 37% of total sales for the gallery sector, compared with only 10% of total online sales in 2019. The gallery sector has long lagged behind in converting sales to the online marketplace. But with the restrictions set out by the COVID-19 pandemic, many have been forced to rethink their online strategies. In the market research report published by Art Basel and USB, it found that online sales from a new audience (one who did not previously interact with the gallery) was largest for smaller galleries. This means there is room for smaller, local galleries, to utilize digital methods to capture the interest of new and existing audiences. This will widen the reach for the artists and galleries alike.</p>
 
@@ -242,7 +252,7 @@
 
     </section>
 
-    <section id="notes">
+    <section id="notes" class="section">
       <h3>Endnotes</h3>
         <ol>
           <li>"The Economic Impact of Coronavirus on the Arts and Culture Sector," Americans for the Arts, accessed September 23, 2020, <a href="https://www.americansforthearts.org/by-topic/disaster-preparedness/the-economic-impact-of-coronavirus-on-the-arts-and-culture-sector">https://www.americansforthearts.org/by-topic/disaster-preparedness/the-economic-impact-of-coronavirus-on-the-arts-and-culture-sector</a></li>
@@ -255,12 +265,12 @@
 
   </main>
 
-  <footer>
+  <!-- <footer>
     <p>Jenna Murphy |  Minneapolis College of Art and Design | Master of Arts in Graphic and Web Design  |  Capstone Fall 2020</p>
-  </footer>
-  <script src="js/vendor/modernizr-3.11.2.min.js"></script>
-  <script src="js/plugins.js"></script>
-  <script src="js/main.js"></script>
+  </footer> -->
+</div>
+</div>
+
   <!-- <script>
   /* Set the width of the side navigation to 250px */
 function openNav() {
