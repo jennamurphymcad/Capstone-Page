@@ -585,6 +585,10 @@ div.mainCopy {
 
 
 }
+
+div.mainCopy h1 {
+  text-align: center;
+}
 /** enlarge the sections for this demo, so that we have a long scrollable page **/
 /* section {
   padding-bottom: 20rem;
@@ -600,4 +604,47 @@ div.wrapper {
   border-left: 2px solid yellow;
   /* border-right: 3px solid yellow; */
 
+}
+
+@media only screen and (max-width: 450px) {
+  /* .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 18px;} */
+  html {
+    /* color: #2d2d2b; */
+    font-size: .6em;
+    line-height: 1.4;
+    /* font-family: 'Lato', sans-serif;
+    font-weight: 300; */
+    /* background-color: #e6e3de; */
+  }
+
+  nav#mySidenav {
+    /* position: fixed; */
+    /* align-self: start; */
+      /* background-color: #111; */
+      /* height: 100%; */
+      padding: 2%;
+      /* width: 25%; */
+      /* height: 100%; */
+
+      /* width: 100%; */
+      /* top: 0;
+      bottom: 0;
+      left: 0; */
+      /* overflow: hidden;
+      margin: 0 auto; */
+  }
+
+  div.mainCopy {
+    float: none;
+    width: 100%;
+    padding-left: 5%;
+    padding-right: 5%;
+    /* max-width: 750px; */
+    /* margin: 0 auto;
+    background-color: white;
+    overflow: hidden; */
+
+
+  }
 }
