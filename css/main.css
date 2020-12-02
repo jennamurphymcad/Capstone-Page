@@ -511,7 +511,7 @@ nav#mySidenav h3, h4 {
 }
 /* 3. ScrollSpy active styles (see JS tab for activation) */
 .section-nav li.active > a {
-  color: #ccc;
+  color: #FFF;
   font-weight: 500;
   text-decoration: underline;
   text-decoration-color: yellow;
