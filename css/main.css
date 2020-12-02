@@ -306,7 +306,7 @@ textarea {
 JM Start
 */
 /* The side navigation menu */
-.sidenav {
+.sidenavb {
   height: 100%; /* 100% Full-height */
   width: 0; /* 0 width - change this with JavaScript */
   position: fixed; /* Stay in place */
@@ -320,7 +320,7 @@ JM Start
 }
 
 /* The navigation menu links */
-.sidenav a, .sidenav h3 {
+.sidenavb a, .sidenavb h3 {
   padding: 8px 8px 8px 32px;
   text-decoration: none;
   font-size: 24px;
@@ -330,7 +330,7 @@ JM Start
 }
 
 /* When you mouse over the navigation links, change their color */
-.sidenav a:hover {
+.sidenavb a:hover {
   color: #f1f1f1;
 }
 
@@ -434,28 +434,27 @@ footer {
   text-align: center;
 }
 
-div#main {
+/* div#main {
   border: 1px solid #161616;
-}
+} */
 
 .wrapper {
   display: flex;
   justify-content: space-between;
 }
 
-div.mainCopy {
+/* div.mainCopy {
   float: right;
-  margin-left:250px;
+  margin-left:250px; */
 
- /* font-size: 28px; /* Increased text to enable scrolling */ */
- padding: 0px 10px;
+ /* font-size: 28px; /* Increased text to enable scrolling */
+ /* padding: 0px 10px; */
  /* max-width:100%; */
 }
 
-div.sidenav {
+/* div.sidenav {
   height: 100%;
   width: 225px;
-  /* max-width:30%; */
   position: fixed;
   z-index: 1;
   top: 0;
@@ -463,15 +462,142 @@ div.sidenav {
   background-color: #111;
   overflow-x: hidden;
   padding-top: 20px;
+} */
 
-}
-
-.active {
+/* .active {
   color: yellow;
   font-style: bold;
-}
+} */
 
 @media screen and (max-height: 450px) {
   /* .sidenav {padding-top: 15px;}
   .sidenav a {font-size: 18px;} */
+}
+
+/*  START NAV */
+/* 1. Enable smooth scrolling */
+html {
+  scroll-behavior: smooth;
+}
+
+/* 2. Make nav sticky */
+nav#mySidenav {
+  position: sticky;
+
+
+
+  align-self: start;
+    background-color: #111;
+    height: 100%;
+    padding: 30px;
+    width: 25%;
+    height: 100%;
+    float: left;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    overflow: hidden;
+    margin: 0 auto;
+
+
+}
+
+nav#mySidenav section {
+  border: none;
+}
+
+nav#mySidenav h3, h4 {
+  color: white;
+}
+/* 3. ScrollSpy active styles (see JS tab for activation) */
+.section-nav li.active > a {
+  color: #ccc;
+  font-weight: 500;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+/* Sidebar Navigation */
+.section-nav {
+  padding-left: 0;
+  margin-left: 0 auto;
+  /* border-right: 3px solid yellow; */
+}
+
+.section-nav a {
+  text-decoration: none;
+  display: block;
+  padding: .125rem 0;
+  color: #ccc;
+  transition: all 50ms ease-in-out; /* 💡 This small transition makes setting of the active state smooth */
+}
+
+.section-nav a:hover,
+.section-nav a:focus {
+  color: #ccc;
+  text-decoration: underline;
+  text-decoration-color: yellow;
+}
+
+/** Poor man's reset **/
+* {
+  box-sizing: border-box;
+}
+
+html, body {
+  background: #fff;
+}
+
+/* body {
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen", "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue", sans-serif;
+} */
+
+ul, ol {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+li {
+  margin-left: 1rem;
+}
+
+/* h1 {
+  font-weight: 300;
+} */
+
+/** page layout **/
+main {
+  /* display: grid;
+  grid-template-columns: 1fr 15em;
+  max-width: 100em;
+  width: 90%;
+  margin: 0 auto; */
+}
+div.mainCopy {
+  float: right;
+  width: 75%;
+  padding-left: 10%;
+  padding-right: 10%;
+  /* max-width: 750px; */
+  margin: 0 auto;
+  background-color: white;
+  overflow: hidden;
+
+
+}
+/** enlarge the sections for this demo, so that we have a long scrollable page **/
+/* section {
+  padding-bottom: 20rem;
+} */
+
+
+/* END NAV */
+div.wrapper {
+  /* height: 100%;
+  Width: 100%; */
+  /* position: relative; */
+  background-color: #111;
+  border-left: 2px solid yellow;
+  /* border-right: 3px solid yellow; */
+
 }
